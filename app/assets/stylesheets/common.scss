@@ -1,0 +1,57 @@
+
+ .partial {
+   text-align:center;
+   padding: 5px;
+   background-color:#e6ffcc;
+   color:black;
+ }
+ 
+ .page_title {
+   display:flex;
+   justify-content: space-between;
+ }
+ 
+ button  {
+   background-color:#fff2f0;
+   border-radius: 4px;
+ }
+ 
+ table {
+    width:100%;
+ }
+ 
+ table th {
+   background-color: #fbc25b;
+   padding: 10px 20px;
+ }
+ 
+ table td {
+   background-color: #f9ecd5;
+   padding: 10px 20px;
+ }
+ 
+ .success {
+   background-color: #ccf;
+   padding: 5px;
+ }
+ 
+ .failure {
+   background-color: #ccf;
+   padding: 5px;
+ }
+ 
+ .information{
+   margin-top: 30px;
+   padding:20px;
+   width: 100%;
+   display: flex;
+   justify-content:space-between;
+   background-color:#e6ffcc;
+ }
+ 
+ .date_today {
+    margin-right:50px;
+ }
+ 
+ 
+
