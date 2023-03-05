@@ -1,0 +1,36 @@
+<div>
+   <ul>
+     <li><%= link_to "←　一覧に戻る", :schedulings %></li>
+   </ul>
+ </div>
+ 
+ <div>
+   <ul>
+     <li><%= link_to "編集", [:edit, @scheduling] %></li>
+   </ul>
+ </div>
+
+<h3>詳細ページ</h3>
+ 
+ <table>
+   <tr>
+     <th>タイトル</th>
+     <td><%= @scheduling.title %></td>
+   </tr>
+   <tr>
+     <th>開始日</th>
+     <td><%= @scheduling.start_date %></td>
+   </tr>
+   <tr>
+     <th>終了日</th>
+     <td><%= @scheduling.end_date %></td>
+   </tr>
+   <tr>
+     <th>終日</th>
+     <td><%= @scheduling.all_day ? "◯" : ""  %></td>
+   </tr>
+   <tr>
+     <th>スケジュールメモ</th>
+     <td><%= @scheduling.memo %></td>
+   </tr>
+ </table>
