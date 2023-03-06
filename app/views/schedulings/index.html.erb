@@ -29,12 +29,12 @@
        <tr>
          <td><%= scheduling.id %></td>
          <td><%= scheduling.title%></td>
-         <td><%= scheduling.start_date %></td>
-         <td><%= scheduling.end_date %></td>
+         <td><%= scheduling.start_date.strftime("%Y/%m/%d") %></td>
+         <td><%= scheduling.end_date.strftime("%Y/%m/%d") %></td>
          <td><%= scheduling.all_day ? "◯" : "" %></td>
-         <td><%= scheduling.updated_at.to_s(:datetime_jp) %></td>
+         <td><%= scheduling.updated_at.to_s(:datetime) %></td>
          <td>
-         <%= link_to "詳細", scheduling %>
+         <%= link_to "詳細",scheduling %>
          </td>
           <td>
            <%= link_to "編集", [:edit, scheduling] %>
